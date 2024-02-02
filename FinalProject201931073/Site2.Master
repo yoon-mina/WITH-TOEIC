@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="project07.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .header { height: 60px; min-width: 600px; background-color: dodgerblue;
+                     color: white; padding: 10px;    }
+        .nav { float: left; width: 150px; min-height: 400px;
+               background-color: lightblue; padding: 10px;     }
+        .article { float: left; min-width: 400px; min-height: 300px;
+                   padding: 10px;      }
+        .auto-style900 {
+            height: 60px;
+            min-width: 600px;
+            background-color: steelblue;
+            color: white;
+            padding: 10px;
+            font-size: x-large;
+        }
+        .auto-style901 {
+            clear: both;
+            height: 70px;
+            background-color: lightgrey;
+            padding: 10px;
+            font-size: small;
+            text-align: left;
+        }
+        .auto-style902 {
+            font-size: xx-small;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style900">
+
+            <strong>WITH TOEIC</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+        <div class="nav">
+
+            <asp:Panel ID="Panel1" runat="server">
+                <asp:Button ID="Button1" runat="server" Text="로그인" OnClick="Button1_Click" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="회원가입" Width="66px" />
+            </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server">
+                <strong>
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+                </strong><br />
+                <br />
+                <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="로그아웃" Width="68px" />
+                <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="정보변경" Width="70px" />
+            </asp:Panel>
+            <br />
+
+            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/test.aspx">DB 테스트 </asp:HyperLink>
+            <br />
+
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NoteList.aspx">자유게시판</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Question/List.aspx">문제 풀이</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Board/List.aspx">파일 공유 (자료실)</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/MemberOnly/CalendarEx.aspx">일정 관리 </asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Information.aspx">토익 정보</asp:HyperLink>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </div>
+        <div class="article">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                기본 콘텐츠
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="auto-style901">
+            <strong>TOEIC STUDY CAFE - WITH TOEIC&nbsp; </strong>
+            <em>
+            <br />
+            <a href="https://withtoeic.com">https://withtoeic.com</a></em><br />
+            <br />
+            TEL : 010-2314-0023 <span class="auto-style902">&nbsp;(9:00 ~ 16:00)</span></div>
+    </form>
+</body>
+</html>
